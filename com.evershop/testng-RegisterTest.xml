@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite Extent Report">
+	<groups>	
+
+   		<run>		
+    		<include name="Regression"></include>	
+   		</run>		
+   	</groups>
+  	<listeners>
+		<listener class-name="com.evershop.listeners.CustomListener"></listener>
+	</listeners>	
+
+  <test name="Realizar orden de compra">   		
+    <classes>
+      	<class name="com.evershop.test.RegisterTest"/>
+    </classes>
+  </test><!-- Test -->
+</suite> <!-- Suite -->
